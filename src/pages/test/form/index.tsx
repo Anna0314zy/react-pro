@@ -46,6 +46,7 @@ const Login: React.FC<LoginProps> = (props) => {
 
   const handleSubmit = (values: LoginParamsType) => {
     const { dispatch } = props;
+    console.log(dispatch,'dispatch');
     dispatch({
       type: 'login/login',
       payload: { ...values, type },
